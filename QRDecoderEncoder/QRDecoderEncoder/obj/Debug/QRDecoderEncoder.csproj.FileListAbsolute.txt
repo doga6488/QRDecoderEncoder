@@ -1,0 +1,48 @@
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\QRDecoderEncoder.exe.config
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\QRDecoderEncoder.exe
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\QRDecoderEncoder.pdb
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.Form1.resources
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.Properties.Resources.resources
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csproj.GenerateResource.cache
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csproj.CoreCompileInputs.cache
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csproj.CopyComplete
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.exe
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.pdb
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Net.Http.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.Core.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.xml
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.Core.xml
+C:\Users\Hp Pc\Desktop\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csprojAssemblyReference.cache
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\QRDecoderEncoder.exe.config
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\QRDecoderEncoder.exe
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\QRDecoderEncoder.pdb
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.Core.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Net.Http.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.xml
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Google.Apis.Core.xml
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csprojAssemblyReference.cache
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.Form1.resources
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.Properties.Resources.resources
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csproj.GenerateResource.cache
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csproj.CoreCompileInputs.cache
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.csproj.CopyComplete
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.exe
+C:\Users\dogut\Desktop\Doğa\üni\C#\QRDecoderEncoder\QRDecoderEncoder\obj\Debug\QRDecoderEncoder.pdb
