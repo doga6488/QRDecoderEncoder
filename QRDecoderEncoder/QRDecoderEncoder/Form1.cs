@@ -4,15 +4,15 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using MessagingToolkit.QRCode.Codec;
 using MessagingToolkit.QRCode.Codec.Data;
+
+
 namespace QRDecoderEncoder
 {
     public partial class Form1 : Form
@@ -31,10 +31,7 @@ namespace QRDecoderEncoder
             thumbnail.Visible = false;
         }
 
-
-
-
-
+        private QRCodeDecoder decoder = new QRCodeDecoder();
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (textBox1.Text != String.Empty)
@@ -43,7 +40,10 @@ namespace QRDecoderEncoder
                 QRCodeEncoder en = new QRCodeEncoder();
                 Bitmap qrcode = en.Encode(url);
                 pictureBox1.Image = qrcode;
-                toolTip1.ToolTipTitle = decode();
+                bool error = false;
+                string decodedtitle = decode(pictureBox1.Image, out error);
+                if (!error && !string.IsNullOrEmpty(decodedtitle))
+                    toolTip1.ToolTipTitle = decodedtitle;
             }
             else
             {
@@ -64,14 +64,30 @@ namespace QRDecoderEncoder
 
         private void button3_Click(object sender, EventArgs e)
         {
+            bool error = false;
+            string decodedtitle = null;
+            Image picture = null;
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+                picture = Image.FromFile(dialog.FileName);
+                decodedtitle = decode(picture, out error);
 
-                pictureBox1.Image = Image.FromFile(dialog.FileName);
             }
-            toolTip1.ToolTipTitle = decode();
+
+            if (error)
+            {
+                pictureBox1.Image = null;
+                toolTip1.ToolTipTitle = null;
+                textBox1.Text = null;
+            }
+            if (!string.IsNullOrEmpty(dialog.FileName) && !error)
+            {
+                toolTip1.ToolTipTitle = decodedtitle;
+                textBox1.Text = decodedtitle;
+                pictureBox1.Image = picture;
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -81,13 +97,18 @@ namespace QRDecoderEncoder
             {
                 try
                 {
+                    bool error = false;
+                    string decodedtitle = decode(pictureBox1.Image, out error);
+                    if (!error && !string.IsNullOrEmpty(decodedtitle))
+                    {
+                        toolTip1.ToolTipTitle = decodedtitle;
 
-                    string address = decode();
-                    Process.Start("https://www.google.com/search?q=" + address);
+                        Process.Start("https://www.google.com/search?q=" + decodedtitle);
+                    }
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Something happened");
+                    MessageBox.Show("An exception has been occured");
                 }
 
             }
@@ -96,11 +117,22 @@ namespace QRDecoderEncoder
 
 
         }
-
-        private string decode()
+        [Pure]
+        private string decode(Image QRPicture, out bool error)
         {
-            QRCodeDecoder dec = new QRCodeDecoder();
-            return dec.Decode(new QRCodeBitmapImage(pictureBox1.Image as Bitmap));
+
+            error = false;
+            try
+            {
+                return decoder.Decode(new QRCodeBitmapImage(QRPicture as Bitmap));
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("The file you have picked is not a QR");
+                error = true;
+                return null;
+            }
+
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -130,9 +162,13 @@ namespace QRDecoderEncoder
                 {
                     try
                     {
-
-                        string address = decode();
-                        Process.Start("https://www.google.com/search?q=" + address);
+                        bool error = false;
+                        string decodedtitle = decode(pictureBox1.Image, out error);
+                        if (!error && !string.IsNullOrEmpty(decodedtitle))
+                        {
+                            toolTip1.ToolTipTitle = decodedtitle;
+                            Process.Start("https://www.google.com/search?q=" + decodedtitle);
+                        }
                     }
                     catch (Exception)
                     {
@@ -211,7 +247,17 @@ namespace QRDecoderEncoder
                 {
                     pb.Image.Dispose();
                 }
-                pb.Image = image;
+
+                bool error = false;
+                string decodedtitle = null;
+                decode(image, out error);
+                if (!error)
+                    pb.Image = image;
+                else
+                {
+                    pb.Image = null;
+                }
+
             }
         }
 
@@ -326,12 +372,13 @@ namespace QRDecoderEncoder
         {
             if (pictureBox1.Image != null)
             {
-                try { toolTip1.ToolTipTitle = decode(); }
-                catch (Exception)
+
+                bool error = false;
+                string decodedtitle = decode(pictureBox1.Image, out error);
+                if (!error && !string.IsNullOrEmpty(decodedtitle))
                 {
-                    MessageBox.Show("File is not supported");
-                    pictureBox1.Image = null;
-                    toolTip1.ToolTipTitle = null;
+                    toolTip1.ToolTipTitle = decodedtitle;
+                    textBox1.Text = decodedtitle;
                 }
             }
         }
